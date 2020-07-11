@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<title>StopWatch</title>
+		<link rel="icon" href="icon.png">
+	</head>
+	<body>
+
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col text-center">
+					<h3>JavaScript - Simple Stopwatch</h3>
+					<hr style="border-top:1px dotted red;"/>
+					<center><h1 class="time" id="timer">00:00:00s</h1></center>
+					<br />
+					<div style="text-align:center;">
+						<button class="btn btn-success" onclick="startTimer(this)">START</button>
+						<button class="btn btn-danger" onclick="stopTimer()">STOP</button>
+						<button class="btn btn-warning" onclick="resetTimer()">RESET</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				Designed By <a target="_blank" class="auther"
+					href="http://facebook.com/ahmedhassansaqlaini">Hassan Ahmed</a>
+			</p>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		
+		<script src="js/app.js"></script>
+
+	</body>
+
+</html>
