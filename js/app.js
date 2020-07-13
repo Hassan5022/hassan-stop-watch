@@ -22,15 +22,22 @@ function timer(){
     }
 }
 
+function disable(btn){
+    btn.setAttribute('disabled', 'disabled');
+    start();
+}
+
 function start(){
     interval = setInterval(timer, 10);
 }
 
 function stop(){
+    document.getElementsByClassName('btn-success')[0].removeAttribute('disabled');
     clearInterval(interval);
 }
 
 function reset(){
+    document.getElementsByClassName('btn-success')[0].removeAttribute('disabled');
     min = 0;
     sec = 0;
     msec = 0;
