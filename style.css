@@ -5,8 +5,11 @@
 }
 
 .time{
+  display: inline-block;
   font-size: 72px;
   color: #f03560;
+  width: 50px;
+  margin: 8px;
 }
 
 h3{
@@ -21,7 +24,7 @@ h3{
 .btn{
   border-radius: 12px !important;
   width: 70px;
-  margin: 6px;
+  margin: 10px;
   height: 50px;
 }
 
@@ -35,26 +38,37 @@ h3{
   padding-bottom: 23px;
 }
 
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 540px) and (min-width: 340px){
   .main{
     width: 85% !important;
   }
   .time{
-    font-size: 60px;
+    font-size: 46px !important;
+    width: 30px !important;
+    margin: 6px;
+  }
+  .btn{
+    width: 62px;
+    margin: 5px;
+    height: 42px;
   }
 }
 
-@media only screen and (max-width: 560px){
+@media only screen and (max-width: 740px) and (min-width: 541px){
   .main{
     width: 85% !important;
   }
-}
-
-@media only screen and (max-width: 760px){
-  .main{
-    width: 85% !important;
+  .time{
+    font-size: 56px !important;
+    width: 40px !important;
+    margin: 8px;
   }
-}
+   .btn{
+    width: 62px;
+    margin: 5px;
+    height: 42px;
+  } 
+} 
 
 .footer{
   color: #e6a6f7;

@@ -9,21 +9,31 @@
 	</head>
 	<body>
 
-		<div class="container-fluid main">
+		<div class="container main">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col text-center">
 					<h3>JavaScript - Simple Stopwatch</h3>
 					<hr style="border-top:1px dotted red;"/>
-					<center><h1 class="time" id="timer">00:00:00s</h1></center>
+					<center>
+						<h2 class="time" id="min">0</h2>
+						<h3 class="time">:</h3>
+						<h2 class="time" id="sec">0</h2>
+						<h3 class="time">:</h3>
+						<h2 class="time" id="msec">0</h2>
+					</center>
 					<br />
-					<div style="text-align:center;">
-						<button class="btn btn-success" onclick="startTimer(this)">START</button>
+					<div>
+						<!-- <button class="btn btn-success" onclick="startTimer(this)">START</button>
 						<button class="btn btn-danger" onclick="stopTimer()">STOP</button>
-						<button class="btn btn-warning" onclick="resetTimer()">RESET</button>
+						<button class="btn btn-warning" onclick="resetTimer()">RESET</button> -->
+						<button class="btn btn-success" onclick="start()">Start</button>
+						<button class="btn btn-danger" onclick="stop()">Stop</button>
+						<button class="btn btn-warning" onclick="reset()">Reset</button>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="footer">
 			<p>
 				Designed By <a target="_blank" class="auther"
